@@ -13,13 +13,13 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach( $items as $row ): 
+        <?php foreach(  $items as $key => $row): 
             // echo '<pre>';
             // print_r($row);
             // die();
             ?>
             <tr>
-                <td> <?php echo $row['id'];?> </td>
+                <td><?php echo ++$key;?></td>
                 <td><?php echo $row['name'];?></td>
                 <td><?php echo $row['class'];?></td>
                 <td><?php echo $row['day'];?></td>
